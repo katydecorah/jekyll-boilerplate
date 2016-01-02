@@ -1,0 +1,47 @@
+// adapted from http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+
+@mixin breakpoint($point) {
+  @if $point == gt-mobile {
+    @media (min-width: 50em) { @content; }
+  } @else if $point == mobile {
+    @media (max-width: 50em) { @content; }
+  }
+}
+
+%clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.hide-small {
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+%flex {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+
+%text-right {text-align: right;}
+
+%text-left {text-align: left;}
+
+%text-center {text-align: center;}

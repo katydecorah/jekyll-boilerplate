@@ -1,0 +1,49 @@
+title: Site name here
+url: http://site-url-here.com
+# baseurl: /base-url-here
+description: Description of site here
+
+highlighter: pygments
+permalink: pretty
+
+author: 
+  name: Katy DeCorah
+  email: katydecorah@gmail.com
+  uri: http://katydecorah.com
+  twitter: "@katydecorah"
+
+sass:
+  style: :compressed
+
+timezone: America/New_York
+
+exclude:
+- node_modules
+- Gemfile
+- README.md
+- .sass-cache
+
+gems:
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-feed
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# CDN versions
+jquery: 2.1.4

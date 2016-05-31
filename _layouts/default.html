@@ -8,20 +8,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- TWITTER + FB card meta tags -->
-<meta name="twitter:site" content="{{site.author.twitter}}" />
-<meta property="og:site_name" content="{{site.title}}" />
-<meta name="twitter:url" content="{{site.url}}{{page.url}}" />
-<meta property="og:url" content="{{site.url}}{{page.url}}" />
-<meta name="twitter:title" content="{{page.title}}" />
-<meta property="og:title" content="{{page.title}}" />
-<meta name="twitter:description" content="{% if page.description %}{{ page.description | truncatewords: 30 }}{% else %}{{content | strip_html | truncatewords: 30 }}{% endif %}" />
-<meta property="og:description" content="{% if page.description %}{{ page.description | truncatewords: 30 }}{% else %}{{content | strip_html | truncatewords: 30 }}{% endif %}" />{% if page.image %}
-<meta name="twitter:image" content="{{page.image}}" />
-<meta name="st:image" content="{{page.image}}" />
-<meta property="og:image" content="{{page.image}}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="og:type" content="website" />{% endif %}
+{% seo %}
 <link rel="stylesheet" href="/css/styles.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 </head>

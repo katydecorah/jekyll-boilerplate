@@ -3,13 +3,13 @@ url: http://site-url-here.com
 # baseurl: /base-url-here
 description: Description of site here
 
-author: 
+author:
   name: Katy DeCorah
   email: katydecorah@gmail.com
   uri: http://katydecorah.com
   twitter: katydecorah
 
-twitter: 
+twitter:
   username: katydecorah
 
 logo: http://placehold.it/300
@@ -28,7 +28,7 @@ exclude:
 - README.md
 - .sass-cache
 
-gems:
+plugins:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap

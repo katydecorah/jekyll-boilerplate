@@ -2,9 +2,13 @@
 
 @mixin breakpoint($point) {
   @if $point == gt-mobile {
-    @media (min-width: 50em) { @content; }
+    @media (min-width: 50em) {
+      @content;
+    }
   } @else if $point == mobile {
-    @media (max-width: 50em) { @content; }
+    @media (max-width: 50em) {
+      @content;
+    }
   }
 }
 
@@ -13,7 +17,7 @@
 
   &:before,
   &:after {
-    content: '\0020';
+    content: "\0020";
     display: block;
     height: 0;
     overflow: hidden;
@@ -40,8 +44,14 @@
   justify-content: left;
 }
 
-%text-right {text-align: right;}
+%text-right {
+  text-align: right;
+}
 
-%text-left {text-align: left;}
+%text-left {
+  text-align: left;
+}
 
-%text-center {text-align: center;}
+%text-center {
+  text-align: center;
+}

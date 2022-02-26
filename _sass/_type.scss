@@ -10,11 +10,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-p {margin-bottom: 1.3em;}
+p {
+  margin-bottom: 1.3em;
+}
 
-h1, 
-h2, 
-h3, 
+h1,
+h2,
+h3,
 h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
@@ -26,18 +28,30 @@ h1 {
   font-size: 2.441em;
 }
 
-h2 {font-size: 1.953em;}
+h2 {
+  font-size: 1.953em;
+}
 
-h3 {font-size: 1.563em;}
+h3 {
+  font-size: 1.563em;
+}
 
-h4 {font-size: 1.25em;}
+h4 {
+  font-size: 1.25em;
+}
 
-small, 
-.small {font-size: 0.8em;}
+small,
+.small {
+  font-size: 0.8em;
+}
 
-em {font-style: italic;}
+em {
+  font-style: italic;
+}
 
-strong {font-weight: $font-weight;}
+strong {
+  font-weight: $font-weight;
+}
 
 a {
   color: $link-color;
@@ -47,5 +61,4 @@ a {
     color: $link-hover;
     text-decoration: underline;
   }
-  
 }

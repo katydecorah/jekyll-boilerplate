@@ -23,17 +23,17 @@ sass:
 timezone: America/New_York
 
 exclude:
-- node_modules
-- Gemfile
-- README.md
-- .sass-cache
+  - node_modules
+  - Gemfile
+  - README.md
+  - .sass-cache
 
 plugins:
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-seo-tag
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 markdown: kramdown
 kramdown:
